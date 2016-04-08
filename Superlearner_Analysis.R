@@ -12,7 +12,7 @@ library(mboost)
 
 ## running updated variant list with updated GI50 data for the approved and investigational drugs
 # ALT: load(file.path("Data", "VariantTableByGene.RData")) # contains VariantTable
-VariantTable <- read.csv(file.path("Data", "VariantTableByGene.csv"))
+VariantTable <- read.csv(file.path("Data", "VariantTableByGene.csv"), row.names = 1)
 
 ## Load drug/agent GI50 data
 DrugDat <- read.csv(file.path("Data", "AOD_IOA_GI50.csv"))
